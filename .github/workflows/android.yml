@@ -1,0 +1,33 @@
+name: Build and lint Android
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  android:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install pinned Android tools
+        run: sh scripts/cloud_setup.sh
+      - name: Build, lint and check native alignment
+        run: sh scripts/build.sh
+      - name: Upload preview and reports
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Llama-Android-preview
+          path: |
+            releases/*.apk
+            releases/*.sha256
+            app/build/reports/lint-results-debug.html
+          retention-days: 14

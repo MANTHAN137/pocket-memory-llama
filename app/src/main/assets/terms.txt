@@ -1,0 +1,7 @@
+Pocket Memory - Llama hackathon preview
+
+Built with Llama. Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved. The full licence and acceptable-use policy are bundled. GGUF quantization by bartowski; model weights are downloaded separately and verified unchanged.
+
+This Llama hackathon preview is developed by Manthan Dhole. Inspect the selected source actions and task date before approving a batch. A source check establishes version consistency, not truth or semantic correctness.
+
+Native inference integration and the Pocket Memory visual palette are reused foundations. The planner, review UI, source-version gate, atomic task execution, idempotency and guarded undo were built for the hackathon.

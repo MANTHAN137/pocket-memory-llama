@@ -1,0 +1,70 @@
+{
+  "description": "Edited walkthrough of actual Android captures, fictional data, real Meta Llama inference; not continuous video or a speed benchmark.",
+  "narration": "macOS Samantha system voice, synthesized locally; no music",
+  "duration_seconds": 144.48,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "timeline": [
+    {
+      "start": 0,
+      "duration": 12.88,
+      "image": "08-llama-model.png",
+      "narration": "Meet Pocket Memory, Llama hackathon edition. It uses Meta Llama three point two, three B, on Android. These are actual app captures, edited into a walkthrough with fictional data."
+    },
+    {
+      "start": 12.88,
+      "duration": 15.44,
+      "image": "01-sources.png",
+      "narration": "Our fictional Lakeview client demo has arrival instructions, a packing list, a venue and a follow-up. A separate team party shares the same name. Keyword matching supplies candidates, but it cannot decide which event belongs in this plan."
+    },
+    {
+      "start": 28.32,
+      "duration": 26.43,
+      "image": "02-review.png",
+      "narration": "Llama selects relevant candidate identifiers. The app enforces explicit workflow phases, putting preparation before arrival, access and after-event follow-up. A grammar restricts its output, and Java checks the identifiers and duplicates. The app copies original source action text. The model cannot invent executable task text. Planning alone creates no tasks. You review the proposal."
+    },
+    {
+      "start": 54.75,
+      "duration": 15.83,
+      "image": "03-evidence.png",
+      "narration": "Open the evidence behind an action. The proposal keeps the source wording and revision used during planning. You can inspect the context and uncheck actions. These checks constrain model authority, but they do not prove that its relevance or ordering is correct."
+    },
+    {
+      "start": 70.58,
+      "duration": 15.74,
+      "image": "04-stale.png",
+      "narration": "Now the venue changes from room Cedar to Orchid. The saved source version no longer matches the proposal. The review screen blocks apply. The same check runs inside the database transaction, so an outdated plan cannot create a partial batch."
+    },
+    {
+      "start": 86.32,
+      "duration": 16.37,
+      "image": "05-ready-to-apply.png",
+      "narration": "Build again with real Llama inference. The fresh proposal uses the current source and still excludes the unrelated party. Review the selected steps and approve. SQLite commits the whole local task batch atomically. Repeating apply does not duplicate the work."
+    },
+    {
+      "start": 102.69,
+      "duration": 18.52,
+      "image": "06-undo.png",
+      "narration": "The new batch can be undone while its created tasks remain unchanged and incomplete. Completing one created task blocks the entire undo. Reused tasks are preserved. Reapplying an undone plan requires another explicit review. Recovery is application logic, not a promise from the model."
+    },
+    {
+      "start": 121.21,
+      "duration": 23.27,
+      "image": "09-restarted-tasks.png",
+      "narration": "After an actual Android process restart, the approved tasks and batch links remain. The app does not rerun Llama or execute again automatically. This offline emulator flow verifies the new planner, not phone speed. Physical-device profiling and broader quality testing remain pending. Explore the source, evidence and standalone preview in the public repository."
+    }
+  ],
+  "video_sha256": "2a1d546f3e925ad4e86e0cf39b45ee77a70ee2ec73a4cc40a04696c34969d8b6",
+  "screenshot_sha256": {
+    "08-llama-model.png": "20dec3f2a1006ad0638a8a44613fcb0e5fe5e73ea88001ff55d0f6cbeda095ef",
+    "01-sources.png": "f5fe456e3268a4478e0f89c9c65772e53fdb099e0db0991be2160f81f89052fe",
+    "02-review.png": "5e1c306c04cb20d5c8646d4f5ef167f75ad3addd0f0700880fab2c8615450238",
+    "03-evidence.png": "bc71cf21a337f9251c9d4babd5796a0500e79b0eab6bb990339d3f7e21a88d34",
+    "04-stale.png": "c3fdbc136a839ec461b858a2580a073bb5dd4af3534aefb4cf7ccb84f30f2d56",
+    "05-ready-to-apply.png": "1d52dfb80025f83e44e08331b39783feb2455013174ae4a6d1d8d12a3178b7d7",
+    "06-undo.png": "c66104d06da03408f7fcab73518c4ce87f01a5a4fd3e11df076f55e6b9021e71",
+    "09-restarted-tasks.png": "32054168084c0b6dd6c263d03cc3ea6f85958c7732a5e5c5d1da18362d97b9cd"
+  }
+}

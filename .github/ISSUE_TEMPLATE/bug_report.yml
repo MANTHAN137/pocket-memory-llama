@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible problem with a fictional or redacted example.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include expected behavior and the app version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use fictional data. Never include private memories or credentials.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+      description: State whether this was an emulator or a physical device.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I checked that this report contains no private memories, keys or credentials.
+          required: true

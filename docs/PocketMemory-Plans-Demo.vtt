@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.279
+Meet Pocket Memory, Llama hackathon edition. It uses Meta Llama three point two, three B, on
+
+00:00:06.279 --> 00:00:11.380
+Android. These are actual app captures, edited into a walkthrough with fictional data.
+
+00:00:12.880 --> 00:00:18.749
+Our fictional Lakeview client demo has arrival instructions, a packing list, a venue and a follow-up.
+
+00:00:18.749 --> 00:00:24.619
+A separate team party shares the same name. Keyword matching supplies candidates, but it cannot decide
+
+00:00:24.619 --> 00:00:26.820
+which event belongs in this plan.
+
+00:00:28.320 --> 00:00:35.707
+Llama selects relevant candidate identifiers. The app enforces explicit workflow phases, putting preparation before arrival, access
+
+00:00:35.707 --> 00:00:43.093
+and after-event follow-up. A grammar restricts its output, and Java checks the identifiers and duplicates. The
+
+00:00:43.093 --> 00:00:50.480
+app copies original source action text. The model cannot invent executable task text. Planning alone creates
+
+00:00:50.480 --> 00:00:53.250
+no tasks. You review the proposal.
+
+00:00:54.750 --> 00:01:00.209
+Open the evidence behind an action. The proposal keeps the source wording and revision used during
+
+00:01:00.209 --> 00:01:05.668
+planning. You can inspect the context and uncheck actions. These checks constrain model authority, but they
+
+00:01:05.668 --> 00:01:09.080
+do not prove that its relevance or ordering is correct.
+
+00:01:10.580 --> 00:01:16.276
+Now the venue changes from room Cedar to Orchid. The saved source version no longer matches
+
+00:01:16.276 --> 00:01:21.972
+the proposal. The review screen blocks apply. The same check runs inside the database transaction, so
+
+00:01:21.972 --> 00:01:24.820
+an outdated plan cannot create a partial batch.
+
+00:01:26.320 --> 00:01:32.268
+Build again with real Llama inference. The fresh proposal uses the current source and still excludes
+
+00:01:32.268 --> 00:01:38.216
+the unrelated party. Review the selected steps and approve. SQLite commits the whole local task batch
+
+00:01:38.216 --> 00:01:41.190
+atomically. Repeating apply does not duplicate the work.
+
+00:01:42.690 --> 00:01:48.879
+The new batch can be undone while its created tasks remain unchanged and incomplete. Completing one
+
+00:01:48.879 --> 00:01:55.068
+created task blocks the entire undo. Reused tasks are preserved. Reapplying an undone plan requires another
+
+00:01:55.068 --> 00:01:59.710
+explicit review. Recovery is application logic, not a promise from the model.
+
+00:02:01.210 --> 00:02:07.782
+After an actual Android process restart, the approved tasks and batch links remain. The app does
+
+00:02:07.782 --> 00:02:14.354
+not rerun Llama or execute again automatically. This offline emulator flow verifies the new planner, not
+
+00:02:14.354 --> 00:02:20.926
+phone speed. Physical-device profiling and broader quality testing remain pending. Explore the source, evidence and standalone
+
+00:02:20.926 --> 00:02:22.980
+preview in the public repository.

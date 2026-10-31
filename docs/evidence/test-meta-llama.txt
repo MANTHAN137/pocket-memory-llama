@@ -1,0 +1,81 @@
+PASS: the hackathon package identity is correct
+PASS: the app has no internet permission
+PASS: the planner walkthrough runs in airplane mode
+PASS: the pinned Meta Llama 3B model is installed and verified
+PASS: source action candidates include a separate event for relevance selection
+PASS: untrusted model output is rejected: {"steps":[999]}
+PASS: untrusted model output is rejected: {"steps":[1,1]}
+PASS: untrusted model output is rejected: {"steps":[1.5]}
+PASS: untrusted model output is rejected: {"steps":[1],"execute":"shell"}
+PASS: untrusted model output is rejected: Here is a plan: {"steps":[1]}
+PASS: capture 01-sources
+PASS: the bounded Llama planning job finishes
+PASS: a source-current proposal is persisted for review
+ACTUAL LLAMA OUTPUT: {"steps":[1, 2, 3, 4]}
+ACTUAL ACTIONS: [{"candidate_id":2,"phase":"Prepare","text":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","source_id":2,"source_version":1,"source_title":"Lakeview · demo kit","source_quote":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","selected":true},{"candidate_id":1,"phase":"Arrive \/ act","text":"Arrive at Riverside Hub at 09:45 for the 10:00 demo.","source_id":1,"source_version":1,"source_title":"Lakeview · arrival","source_quote":"The Lakeview client demo is on 2 November 2026. Arrive at Riverside Hub at 09:45 for the 10:00 demo.","selected":true},{"candidate_id":3,"phase":"Access","text":"Use the east entrance to reach room Cedar for the Lakeview client demo.","source_id":3,"source_version":1,"source_title":"Lakeview · venue","source_quote":"Use the east entrance to reach room Cedar for the Lakeview client demo.","selected":true},{"candidate_id":4,"phase":"Follow up","text":"send Mira the revised storyboard for approval before production.","source_id":4,"source_version":1,"source_title":"Lakeview · follow-up","source_quote":"After the Lakeview client demo, send Mira the revised storyboard for approval before production.","selected":true}]
+PASS: Llama selects the complete client-demo workflow from allowed source actions
+PASS: application phase rules order preparation before arrival, venue access and follow-up
+PASS: Llama excludes the separate party rather than selecting every retrieved action
+PASS: model planning alone creates no tasks
+PASS: capture 02-review
+PASS: capture 03-evidence
+PASS: capture 04-stale
+PASS: stale source versions reject the whole apply transaction without partial tasks
+PASS: the bounded Llama planning job finishes
+PASS: a source-current proposal is persisted for review
+ACTUAL LLAMA OUTPUT: {"steps":[1, 2, 3, 4]}
+ACTUAL ACTIONS: [{"candidate_id":2,"phase":"Prepare","text":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","source_id":2,"source_version":1,"source_title":"Lakeview · demo kit","source_quote":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","selected":true},{"candidate_id":1,"phase":"Arrive \/ act","text":"Arrive at Riverside Hub at 09:45 for the 10:00 demo.","source_id":1,"source_version":1,"source_title":"Lakeview · arrival","source_quote":"The Lakeview client demo is on 2 November 2026. Arrive at Riverside Hub at 09:45 for the 10:00 demo.","selected":true},{"candidate_id":3,"phase":"Access","text":"Use the west entrance to reach room Orchid for the Lakeview client demo.","source_id":3,"source_version":2,"source_title":"Lakeview · venue","source_quote":"Use the west entrance to reach room Orchid for the Lakeview client demo.","selected":true},{"candidate_id":4,"phase":"Follow up","text":"send Mira the revised storyboard for approval before production.","source_id":4,"source_version":1,"source_title":"Lakeview · follow-up","source_quote":"After the Lakeview client demo, send Mira the revised storyboard for approval before production.","selected":true}]
+PASS: the rebuilt Llama proposal uses the current source and excludes unrelated actions
+PASS: capture 05-ready-to-apply
+PASS: the real review button commits the selected source actions to local tasks
+PASS: repeating apply is idempotent and cannot duplicate the task batch
+PASS: undo preserves all tasks if a created task has been completed
+PASS: undo removes only this batch's unchanged newly created tasks
+PASS: capture 06-undo
+PASS: explicit review can reapply an undone, source-current batch
+PASS: capture 07-created-tasks
+PASS: capture 08-llama-model
+PASS: the preview exposes the actual verified Meta Llama model
+All example names, dates, venues and tasks are fictional. Model output selects IDs; the app copies action text from sources. No external communication was performed.
+PASS: the hackathon package identity is correct
+PASS: the app has no internet permission
+PASS: the planner walkthrough runs in airplane mode
+PASS: the pinned Meta Llama 3B model is installed and verified
+PASS: source action candidates include a separate event for relevance selection
+PASS: untrusted model output is rejected: {"steps":[999]}
+PASS: untrusted model output is rejected: {"steps":[1,1]}
+PASS: untrusted model output is rejected: {"steps":[1.5]}
+PASS: untrusted model output is rejected: {"steps":[1],"execute":"shell"}
+PASS: untrusted model output is rejected: Here is a plan: {"steps":[1]}
+PASS: capture 01-sources
+PASS: the bounded Llama planning job finishes
+PASS: a source-current proposal is persisted for review
+ACTUAL LLAMA OUTPUT: {"steps":[1, 2, 3, 4]}
+ACTUAL ACTIONS: [{"candidate_id":2,"phase":"Prepare","text":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","source_id":2,"source_version":1,"source_title":"Lakeview · demo kit","source_quote":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","selected":true},{"candidate_id":1,"phase":"Arrive \/ act","text":"Arrive at Riverside Hub at 09:45 for the 10:00 demo.","source_id":1,"source_version":1,"source_title":"Lakeview · arrival","source_quote":"The Lakeview client demo is on 2 November 2026. Arrive at Riverside Hub at 09:45 for the 10:00 demo.","selected":true},{"candidate_id":3,"phase":"Access","text":"Use the east entrance to reach room Cedar for the Lakeview client demo.","source_id":3,"source_version":1,"source_title":"Lakeview · venue","source_quote":"Use the east entrance to reach room Cedar for the Lakeview client demo.","selected":true},{"candidate_id":4,"phase":"Follow up","text":"send Mira the revised storyboard for approval before production.","source_id":4,"source_version":1,"source_title":"Lakeview · follow-up","source_quote":"After the Lakeview client demo, send Mira the revised storyboard for approval before production.","selected":true}]
+PASS: Llama selects the complete client-demo workflow from allowed source actions
+PASS: application phase rules order preparation before arrival, venue access and follow-up
+PASS: Llama excludes the separate party rather than selecting every retrieved action
+PASS: model planning alone creates no tasks
+PASS: capture 02-review
+PASS: capture 03-evidence
+PASS: capture 04-stale
+PASS: stale source versions reject the whole apply transaction without partial tasks
+PASS: the bounded Llama planning job finishes
+PASS: a source-current proposal is persisted for review
+ACTUAL LLAMA OUTPUT: {"steps":[1, 2, 3, 4]}
+ACTUAL ACTIONS: [{"candidate_id":2,"phase":"Prepare","text":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","source_id":2,"source_version":1,"source_title":"Lakeview · demo kit","source_quote":"Bring the prototype tablet, USB-C hub and printed storyboard to the Lakeview client demo.","selected":true},{"candidate_id":1,"phase":"Arrive \/ act","text":"Arrive at Riverside Hub at 09:45 for the 10:00 demo.","source_id":1,"source_version":1,"source_title":"Lakeview · arrival","source_quote":"The Lakeview client demo is on 2 November 2026. Arrive at Riverside Hub at 09:45 for the 10:00 demo.","selected":true},{"candidate_id":3,"phase":"Access","text":"Use the west entrance to reach room Orchid for the Lakeview client demo.","source_id":3,"source_version":2,"source_title":"Lakeview · venue","source_quote":"Use the west entrance to reach room Orchid for the Lakeview client demo.","selected":true},{"candidate_id":4,"phase":"Follow up","text":"send Mira the revised storyboard for approval before production.","source_id":4,"source_version":1,"source_title":"Lakeview · follow-up","source_quote":"After the Lakeview client demo, send Mira the revised storyboard for approval before production.","selected":true}]
+PASS: the rebuilt Llama proposal uses the current source and excludes unrelated actions
+PASS: capture 05-ready-to-apply
+PASS: the real review button commits the selected source actions to local tasks
+PASS: repeating apply is idempotent and cannot duplicate the task batch
+PASS: undo preserves all tasks if a created task has been completed
+PASS: undo removes only this batch's unchanged newly created tasks
+PASS: capture 06-undo
+PASS: explicit review can reapply an undone, source-current batch
+PASS: capture 07-created-tasks
+PASS: capture 08-llama-model
+PASS: the preview exposes the actual verified Meta Llama model
+All example names, dates, venues and tasks are fictional. Model output selects IDs; the app copies action text from sources. No external communication was performed.
+
+ALL CHECKS PASSED
+

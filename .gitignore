@@ -1,0 +1,17 @@
+.gradle/
+.tooling/
+build/
+app/build/
+app/src/main/jniLibs/
+local.properties
+releases/
+verification/
+*.gguf
+*.keystore
+*.jks
+*.pmbackup
+*.db
+*.db-*
+*.properties.private
+.DS_Store
+__pycache__/

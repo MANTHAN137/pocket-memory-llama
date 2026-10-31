@@ -1,0 +1,97 @@
+{
+  "prepared": "2026-11-01",
+  "package": "com.pocketmemory.llama",
+  "version": "0.6.0",
+  "version_code": 20,
+  "model": {
+    "id": "llama-3.2-3b",
+    "upstream": "meta-llama/Llama-3.2-3B-Instruct",
+    "repo": "bartowski/Llama-3.2-3B-Instruct-GGUF",
+    "revision": "5ab33fa94d1d04e903623ae72c95d1696f09f9e8",
+    "filename": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "bytes": 2019377696,
+    "sha256": "6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff"
+  },
+  "apk": {
+    "filename": "PocketMemory-Plans-0.6.0.apk",
+    "bytes": 9065352,
+    "sha256": "21b8c9e9161b37dda5315d5d7a2509a77c9586677f4c0a7a7dcd3b6cf5da61be",
+    "signing": "Android debug certificate"
+  },
+  "build": {
+    "assembleDebug": "passed",
+    "assembleDebugAndroidTest": "passed",
+    "lintDebug": "passed",
+    "apk_signature": "verified",
+    "zipalign_16KB": "passed",
+    "native_LOAD_alignment_16KB": "passed"
+  },
+  "runtime": {
+    "environment": "isolated ARM64 Android 15 emulator",
+    "airplane_mode": true,
+    "actual_Meta_inference": true,
+    "physical_phone_tested": false,
+    "checks": {
+      "test-meta-llama.txt": [
+        "the hackathon package identity is correct",
+        "the app has no internet permission",
+        "the planner walkthrough runs in airplane mode",
+        "the pinned Meta Llama 3B model is installed and verified",
+        "source action candidates include a separate event for relevance selection",
+        "untrusted model output is rejected: {\"steps\":[999]}",
+        "untrusted model output is rejected: {\"steps\":[1,1]}",
+        "untrusted model output is rejected: {\"steps\":[1.5]}",
+        "untrusted model output is rejected: {\"steps\":[1],\"execute\":\"shell\"}",
+        "untrusted model output is rejected: Here is a plan: {\"steps\":[1]}",
+        "capture 01-sources",
+        "the bounded Llama planning job finishes",
+        "a source-current proposal is persisted for review",
+        "Llama selects the complete client-demo workflow from allowed source actions",
+        "application phase rules order preparation before arrival, venue access and follow-up",
+        "Llama excludes the separate party rather than selecting every retrieved action",
+        "model planning alone creates no tasks",
+        "capture 02-review",
+        "capture 03-evidence",
+        "capture 04-stale",
+        "stale source versions reject the whole apply transaction without partial tasks",
+        "the rebuilt Llama proposal uses the current source and excludes unrelated actions",
+        "capture 05-ready-to-apply",
+        "the real review button commits the selected source actions to local tasks",
+        "repeating apply is idempotent and cannot duplicate the task batch",
+        "undo preserves all tasks if a created task has been completed",
+        "undo removes only this batch's unchanged newly created tasks",
+        "capture 06-undo",
+        "explicit review can reapply an undone, source-current batch",
+        "capture 07-created-tasks",
+        "capture 08-llama-model",
+        "the preview exposes the actual verified Meta Llama model"
+      ],
+      "test-planner-restart.txt": [
+        "the hackathon package identity is correct",
+        "the app has no internet permission",
+        "the planner walkthrough runs in airplane mode",
+        "the pinned Meta Llama 3B model is installed and verified",
+        "the applied plan survives an actual Android process restart",
+        "task identities and batch links survive restart without duplicate execution",
+        "reopening the app does not automatically rerun Llama or apply a plan",
+        "capture 09-restarted-tasks"
+      ]
+    }
+  },
+  "source_sha256": {
+    "app/src/main/java/com/pocketmemory/app/ExampleData.java": "93e11600943f6906f0f808cc88958bb3beb3de81174a1b1657512059a8b6c325",
+    "app/src/main/java/com/pocketmemory/app/LlamaPlanner.java": "94a319028da4a144ca00f9ab9ba7ed459612f8c4e50b04726d0a45451f5f9ef4",
+    "app/src/main/java/com/pocketmemory/app/LocalLlama.java": "8b0407fb25c8f5e1d8f7f6144e3030656c372905034f7f6ab777a7255233a03f",
+    "app/src/main/java/com/pocketmemory/app/MainActivity.java": "2330e681259398addce97627c2cf43e0623823969117d3c3f89b138b0dfcd29a",
+    "app/src/main/java/com/pocketmemory/app/ModelFiles.java": "b54d47b5b7216b236fbe0d7ed42e3df7e17ee11e4a30b8625a04ff82834c8471",
+    "app/src/main/java/com/pocketmemory/app/PlanApp.java": "15d27400d310d919af4f6d77f0f2c60071837753fbd593aad10407ec4b1f8386",
+    "app/src/main/java/com/pocketmemory/app/PlanStore.java": "946654ec6e3fa24421d93f7f1d43fff038a0e266102d5c3a4c834b6f73324917",
+    "native/llm/planner_jni.cpp": "d52b50bf3065a40bb709a716a7efd0038a690563f727f7573bae2eb0ec6e36d5",
+    "app/src/androidTest/java/com/pocketmemory/app/OfflineInstrumentation.java": "36ef109f2c8fac264b3b6c9fb768e4956a41170cc86dc55436d3c119423f9d8c"
+  },
+  "limitations": [
+    "Structural checks do not prove relevance.",
+    "Application-owned phase rules are narrow; they are not a general dependency solver.",
+    "Physical-phone performance and broader quality/accessibility evaluation remain pending."
+  ]
+}

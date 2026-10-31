@@ -1,0 +1,13 @@
+Pocket Memory - Android hackathon preview
+Effective: 1 November 2026
+Publisher: Manthan Dhole | indiakamanthan@gmail.com
+
+This standalone app stores source notes, plan proposals, source snapshots, task batches and tasks in its private Android storage. Meta Llama inference runs on the phone. The app requests no internet permission and includes no analytics, billing, OCR, speech recognition or remote reporting SDK.
+
+Model downloads open Hugging Face in your external browser. The browser and download hosts receive ordinary connection metadata. You explicitly select the downloaded GGUF through Android's document picker. The app verifies its pinned size and SHA-256. Model files have their own bundled licence and acceptable-use policy.
+
+The database is not separately encrypted. Android app and device protection apply. Automatic Android cloud backup is disabled. Plans and tasks retain the exact source evidence they were created from; editing or removing a source does not erase those saved snapshots. Clear this app's storage in Android Settings or uninstall it to remove its private data. External downloaded model files remain under your control.
+
+No account, payment, notification, location, microphone or camera access is needed. The task planner creates only local to-do tasks after review. It does not send messages, book appointments.
+
+Llama can select an irrelevant action or an unsuitable order. Inspect every proposal and source before applying it. The preview is not for emergencies or professional advice.
