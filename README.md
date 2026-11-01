@@ -8,7 +8,7 @@ This edition offers **Meta Llama 3.2 3B Instruct** as its only language model. D
 
 [Download Android APK](https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.8.0-llama/PocketMemory-Llama-0.8.0.apk) · [Watch the 1:55 narrated walkthrough](https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.8.0-llama/PocketMemory-Llama-Demo.mp4) · [Preview](https://manthan137.github.io/pocket-memory-llama/)
 
-<table><tr><td width="33%"><img src="docs/images/memory.png" alt="Pocket Memory"></td><td width="33%"><img src="docs/images/memory-answer.png" alt="Actual Llama saved-memory answer"></td><td width="33%"><img src="docs/images/models.png" alt="Llama ready in Models"></td></tr></table>
+<table><tr><td width="33%"><img src="docs/images/memory.png" alt="Pocket Memory"></td><td width="33%"><img src="docs/images/memory-answer-final.png" alt="Actual Llama saved-memory answer"></td><td width="33%"><img src="docs/images/models.png" alt="Llama ready in Models"></td></tr></table>
 
 The narrated walkthrough is edited from actual Android/browser captures with fictional data. No simulated taps or inference-speed claim. [Media provenance](docs/evidence/media-provenance.json).
 

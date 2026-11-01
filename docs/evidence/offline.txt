@@ -1,0 +1,21 @@
+Airplane mode enabled; Wi-Fi and mobile data disabled on isolated emulator.
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: Pocket Memory generates a checked saved-memory answer with actual Llama
+PASS: capture memory-answer
+PASS: the original Chat runs the actual local Llama model
+PASS: capture chat-answer
+PASS: saved memories survive model use
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: Pocket Memory generates a checked saved-memory answer with actual Llama
+ACTUAL MEMORY ANSWER: To bring to the Juniper demo, you should bring the purple adapter. [1]
+PASS: capture memory-answer
+PASS: the original Chat runs the actual local Llama model
+ACTUAL CHAT ANSWER: Hello, how can I assist you today?
+PASS: capture chat-answer
+PASS: saved memories survive model use
+
+ALL CHECKS PASSED

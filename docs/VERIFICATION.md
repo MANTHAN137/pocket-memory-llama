@@ -10,6 +10,7 @@ These checks cover Pocket Memory Llama 0.8.0.
 - Only Meta Llama 3.2 3B is offered in the model catalog.
 - Real saved-memory inference: the fictional Juniper note produced a purple-adapter answer and a memory reference.
 - Real Chat inference returned a local Llama reply.
+- With airplane mode enabled and Wi-Fi/mobile data disabled, Llama generated the checked purple-adapter answer and a Chat reply. The fixture reuses one exact fictional note on repeat runs; it requires a generated answer rather than accepting a source-only fallback.
 - Saved memory remained present after inference.
 - Separate Android package and signing identity verified; original Pocket Memory release/source were not changed.
 

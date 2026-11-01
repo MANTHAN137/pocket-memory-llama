@@ -32,10 +32,10 @@ public final class EditionInstrumentation extends Instrumentation {
         check(WebResearch.answer("Question",sources,"{\"answer\":\"It downloads files.\",\"sources\":[1]}").cited[0]==1,"a bounded cited answer remains usable");
     }
     void core()throws Exception{
-        long note=app.store.save(0,"Juniper demo kit","Bring the purple adapter to the Juniper demo.","");
+        long note=0;for(MemoryStore.Note fixture:app.store.notes("Juniper demo kit")){if(fixture.title.equals("Juniper demo kit")&&fixture.body.equals("Bring the purple adapter to the Juniper demo.")){if(note==0)note=fixture.id;else app.store.delete(fixture.id);}}if(note==0)note=app.store.save(0,"Juniper demo kit","Bring the purple adapter to the Juniper demo.","");
         List<MemoryStore.Passage> evidence=new ArrayList<>();
         Future<String> answer=app.worker.submit(()->app.engine.ask("What should I bring to the Juniper demo?",new AppEngine.Reply(){public void text(String text){app.answer=text;app.question="What should I bring to the Juniper demo?";app.answerPrompt=app.question;app.changed();}public void sources(List<MemoryStore.Passage> rows){evidence.clear();evidence.addAll(rows);app.sources=rows;}}));
-        String text=answer.get(160,TimeUnit.SECONDS);check(text.toLowerCase(Locale.ROOT).contains("purple adapter")&&!evidence.isEmpty(),"Pocket Memory answers from a saved memory using the Llama pipeline");log.append("ACTUAL MEMORY ANSWER: ").append(text).append('\n');main(()->activity.go("Ask"));shot("memory-answer");
+        String text=answer.get(160,TimeUnit.SECONDS);check(text.toLowerCase(Locale.ROOT).contains("purple adapter")&&!evidence.isEmpty()&&!text.contains("could not verify a generated answer"),"Pocket Memory generates a checked saved-memory answer with actual Llama");log.append("ACTUAL MEMORY ANSWER: ").append(text).append('\n');main(()->activity.go("Ask"));shot("memory-answer");
         String chat=app.chats.create();String reply=app.worker.submit(()->app.engine.chat(chat,"Say hello in one short sentence.",null)).get(140,TimeUnit.SECONDS);check(!reply.isBlank(),"the original Chat runs the actual local Llama model");log.append("ACTUAL CHAT ANSWER: ").append(reply).append('\n');app.chatId=chat;main(()->activity.go("Chat"));shot("chat-answer");check(app.store.note(note)!=null,"saved memories survive model use");
     }
     void web()throws Exception{
