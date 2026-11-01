@@ -1,22 +1,110 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:14.640
-Pocket Memory keeps your useful details close. This Android edition uses Meta Llama three point two, three billion parameters, running on the phone. It keeps the familiar Memory, Chat, Writing and Today screens.
+00:00:00.000 --> 00:00:04.268
+You're about to leave for a weekend
+away. You remember saving where
 
-00:00:14.640 --> 00:00:29.000
-Here is a fictional example. Save a note saying: Bring the purple adapter to the Juniper demo. Ask what you should bring. The actual Llama pipeline identified the purple adapter and returned a reference to the saved note.
+00:00:04.268 --> 00:00:08.535
+you put the spare keys, but not where.
+Ask Pocket Memory: Where
 
-00:00:29.000 --> 00:00:42.780
-Chat uses the local Llama model. Writing keeps Pocket Memory’s existing draft tools and review controls. These familiar app features are the foundation, rather than newly invented hackathon functionality.
+00:00:08.535 --> 00:00:12.803
+did I keep the spare keys? Llama finds
+the saved note: the
 
-00:00:42.780 --> 00:01:00.000
-Model setup stays inside the app. Download Llama, pause or resume if needed, and wait for the full file check. Then tap Use this model. A real HTTPS resume, full checksum verification and model selection passed in the isolated Android emulator.
+00:00:12.803 --> 00:00:17.071
+blue pouch in the front pocket of your
+grey backpack. The source
 
-00:01:00.000 --> 00:01:16.530
-When you choose Search the web in Chat, only that message goes to Exa’s MCP service. Saved memories and earlier messages are not attached. Llama reads bounded excerpts locally and returns source links. This screen shows an actual successful web answer.
+00:00:17.071 --> 00:00:20.983
+stays visible, so you can check it.
+Useful details, without searching
 
-00:01:16.530 --> 00:01:34.300
-Open Browser companion from Android Settings. In a supporting browser, five WebMCP tools can check the model, find memories, ask about them, chat, or search the web. Actual browser tool calls found the Juniper note and obtained this Llama answer from Android.
+00:00:20.983 --> 00:00:22.050
+through every note.
 
-00:01:34.300 --> 00:01:55.380
-Web research has one search and one answer, with no automatic retry loop. Requests, content, tokens and time are capped. The companion uses phone loopback, a one use code and a fifteen minute session. Browser agents may process returned content under their provider’s policy. Physical phone testing remains pending.
+00:00:23.050 --> 00:00:28.185
+Now a client changes a video brief.
+Friday becomes Monday. English captions
+
+00:00:28.185 --> 00:00:33.320
+become Hindi. Save the correction and
+ask about the updated brief. Here,
+
+00:00:33.320 --> 00:00:38.456
+the model's answer could not be
+verified, so Pocket Memory shows the
+
+00:00:38.456 --> 00:00:42.735
+original updated note. Monday evening.
+Hindi captions. The earlier wording
+
+00:00:42.735 --> 00:00:47.870
+remains in history. You can check what
+changed before doing the work,
+
+00:00:47.870 --> 00:00:50.010
+without trusting an unsupported answer.
+
+00:00:51.010 --> 00:00:55.540
+Before your trip, you want to use Google
+Maps offline. Turn on
+
+00:00:55.540 --> 00:01:00.070
+Search the web and ask how to download
+an area on Android.
+
+00:01:00.070 --> 00:01:04.600
+Pocket Memory uses one MCP search, then
+Llama reads the results on
+
+00:01:04.600 --> 00:01:09.130
+your phone and returns source links.
+Your private key-location note is not
+
+00:01:09.130 --> 00:01:13.282
+attached. Check the official source,
+then follow the steps when you're
+
+00:01:13.282 --> 00:01:13.660
+ready.
+
+00:01:14.660 --> 00:01:19.675
+Need the client's updated brief while
+working in your browser? Open the
+
+00:01:19.675 --> 00:01:24.272
+WebMCP companion from Android Settings.
+A permitted browser agent can search
+
+00:01:24.272 --> 00:01:29.286
+Cedar Studio and retrieve the current
+saved note. The app still runs
+
+00:01:29.286 --> 00:01:34.301
+on your phone. Browser access expires,
+and requests are limited. Your chosen
+
+00:01:34.301 --> 00:01:38.480
+browser agent may process returned
+content under its own policy.
+
+00:01:39.480 --> 00:01:44.762
+Download Llama inside Models, then tap
+Use this model. After setup,
+
+00:01:44.762 --> 00:01:49.564
+saved-memory answers work offline. These
+are real Llama results with
+
+00:01:49.564 --> 00:01:54.846
+fictional examples, edited from actual
+app captures. Pocket Memory's core is
+
+00:01:54.846 --> 00:02:00.128
+the existing foundation. This edition
+adds the Llama setup, guarded MCP
+
+00:02:00.128 --> 00:02:04.450
+search and WebMCP companion. Physical-
+phone testing is still pending.

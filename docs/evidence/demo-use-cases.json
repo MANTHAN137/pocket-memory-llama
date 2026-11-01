@@ -1,0 +1,46 @@
+{
+  "fictional": true,
+  "cases": [
+    {
+      "case": "travel",
+      "question": "Where did I keep the spare keys for the weekend stay?",
+      "answer": "The spare keys for the weekend stay are in the blue pouch inside the front pocket of my grey backpack. [1]",
+      "source": "Weekend stay \u00b7 spare keys",
+      "mode": "checked generated answer"
+    },
+    {
+      "case": "client",
+      "question": "Which day should I deliver Cedar Studio's video, and which caption language should I use?",
+      "answer": "I found these saved passages. Showing the original wording because I could not verify a generated answer:\n\n[1] Cedar Studio updated the video brief. Deliver the product video by Monday evening with Hindi captions. Do not add background music.",
+      "source": "Cedar Studio \u00b7 video brief",
+      "mode": "source-only safety fallback"
+    },
+    {
+      "case": "travel web research",
+      "question": "How do I download an area in Google Maps for offline use on Android? Use Google's official help.",
+      "answer": "To download an area in Google Maps for offline use on Android, search for a place, swipe right, and tap 'More' > 'Download offline map'.",
+      "mode": "checked structured Llama answer with web references",
+      "sources": [
+        {
+          "title": "Download areas & navigate offline in Google Maps - Android - Google Maps Help",
+          "url": "https://support.google.com/maps/answer/6291838"
+        },
+        {
+          "title": "Download areas & navigate offline",
+          "url": "https://support.google.com/maps/answer/6291838?hl=en"
+        },
+        {
+          "title": "Download areas & navigate offline in Google Maps",
+          "url": "https://support.google.com/maps/answer/6291838?co=GENIE.Platform%3DAndroid&hl=en"
+        }
+      ]
+    },
+    {
+      "case": "browser client lookup",
+      "operation": "WebMCP search_memories",
+      "query": "Cedar Studio",
+      "result": "Cedar Studio updated the video brief. Deliver the product video by Monday evening with Hindi captions. Do not add background music.",
+      "mode": "actual WebMCP memory search"
+    }
+  ]
+}

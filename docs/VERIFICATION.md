@@ -32,3 +32,9 @@ Evidence is under [evidence](evidence/). Actual screenshots are under [images](i
 Build using scripts/build.sh. EditionInstrumentation runs only on an isolated emulator and requires the pinned model fixture and accepted model terms. Stages: show, core, web, download, restart, guards, companion. The download stage resumes a deliberately truncated fixture and checks the full resulting SHA-256. Never run fictional/destructive fixtures on a physical phone.
 
 No physical-phone speed, battery, accuracy or production-readiness measurement is claimed. A successful structural source-ID check does not prove answer truth. WebMCP browser compatibility must be reported from actual testing.
+
+## Revised use-case demo
+
+The 2:05 demo adds actual travel recall, a corrected client brief, a Google Maps web-research question, and a WebMCP client-memory lookup. The client answer's source-only safety fallback is explicitly labeled. The Writing attempt returned the original draft unchanged and is not presented as an improvement. The earlier capture fixture used an incorrect Writing tab name; that fixture and the Writing image were corrected. Application code and the 0.8.0 APK are unchanged.
+
+Rishi narration was synthesized locally. Paid Higgsfield audio generation was not submitted and consumed no credits. The video uses actual app/browser captures, including genuine saved-answer/history views; edits do not imply inference speed. See [case evidence](evidence/demo-use-cases.json) and [media provenance](evidence/media-provenance.json).

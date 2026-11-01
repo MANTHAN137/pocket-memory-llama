@@ -1,36 +1,64 @@
 {
-  "duration_seconds": 115.38,
-  "editing": "Actual Android and browser screenshots assembled with captions and locally synthesized macOS narration. No simulated taps or inference-speed claim.",
+  "duration_seconds": 125.45,
+  "voice": "Rishi, local macOS speech synthesis (male Indian English)",
+  "external_audio_credits_spent": 0,
+  "narration_not_app_inference": true,
+  "editing": "Actual app/browser captures assembled with narration. Waiting time and transitions edited; no inference-speed claim.",
   "fictional_data": true,
-  "sha256": "8e04d0012de855afa376a50d586ad87f84ecc6c9fc0d12df264c577c76569d0d",
+  "sha256": "6437ba643a33aa99f0889832faf267fa55909c9416df928628ed1505512e2201",
+  "timeline": [
+    {
+      "start": 0,
+      "end": 23.05,
+      "text": "You're about to leave for a weekend away. You remember saving where you put the spare keys, but not where. Ask Pocket Memory: Where did I keep the spare keys? Llama finds the saved note: the blue pouch in the front pocket of your grey backpack. The source stays visible, so you can check it. Useful details, without searching through every note.",
+      "scene": "travel"
+    },
+    {
+      "start": 23.05,
+      "end": 51.01,
+      "text": "Now a client changes a video brief. Friday becomes Monday. English captions become Hindi. Save the correction and ask about the updated brief. Here, the model's answer could not be verified, so Pocket Memory shows the original updated note. Monday evening. Hindi captions. The earlier wording remains in history. You can check what changed before doing the work, without trusting an unsupported answer.",
+      "scene": "client"
+    },
+    {
+      "start": 51.01,
+      "end": 74.66,
+      "text": "Before your trip, you want to use Google Maps offline. Turn on Search the web and ask how to download an area on Android. Pocket Memory uses one MCP search, then Llama reads the results on your phone and returns source links. Your private key-location note is not attached. Check the official source, then follow the steps when you're ready.",
+      "scene": "maps"
+    },
+    {
+      "start": 74.66,
+      "end": 99.48,
+      "text": "Need the client's updated brief while working in your browser? Open the WebMCP companion from Android Settings. A permitted browser agent can search Cedar Studio and retrieve the current saved note. The app still runs on your phone. Browser access expires, and requests are limited. Your chosen browser agent may process returned content under its own policy.",
+      "scene": "companion"
+    },
+    {
+      "start": 99.48,
+      "end": 125.45,
+      "text": "Download Llama inside Models, then tap Use this model. After setup, saved-memory answers work offline. These are real Llama results with fictional examples, edited from actual app captures. Pocket Memory's core is the existing foundation. This edition adds the Llama setup, guarded MCP search and WebMCP companion. Physical-phone testing is still pending.",
+      "scene": "setup"
+    }
+  ],
   "screens": [
     {
-      "file": "memory.png",
-      "sha256": "07ee304d7a72b2aafb7318a1c5dff7e0f4632425d887815f6984fee569d123a6"
+      "file": "use-cases/demo-travel-detail.png",
+      "sha256": "b0787868574b403ad75e8f7653b4c80146ceb77c182c62ddc5e8d7716ce2c650"
     },
     {
-      "file": "memory-answer.png",
-      "sha256": "5595061d11ee14383e697577ba3b77528152a9199a2ef00dcce804b31e510afd"
+      "file": "use-cases/demo-client-detail.png",
+      "sha256": "00b588e56b569ed87fd8ab13e9aa61efca03b2bb74163ba90f70a4b2cd935246"
     },
     {
-      "file": "chat.png",
-      "sha256": "fd48c395c92c8832e9051ddc742a6dd513636622d62dbc0284870d1b7d2ab76b"
+      "file": "use-cases/demo-maps.png",
+      "sha256": "dc2db6aa10888968a198a5a060b72285a10cb9be0cd2fd3c42c171f9a29c25e2"
     },
     {
-      "file": "model-ready.png",
-      "sha256": "a7cee24d7dcea7f3aa97ccddc5c74cec45392ce87bdf6c0c7eaabc3b8a4ede9a"
+      "file": "use-cases/demo-webmcp.png",
+      "sha256": "5d3d47d627f13d63e504ce756511f3449802bc6d7fd7150d47ea65f8a8efd387"
     },
     {
-      "file": "web-chat.png",
-      "sha256": "625c88d3302192b38f47cf4ad2279f64a96b5a90e1fd42bca842de38d40a05cc"
-    },
-    {
-      "file": "webmcp-companion.png",
-      "sha256": "c6986364f725bd92ae804118a5f311ededc5fd4cfdc409e1c1dc5a05f0b1e27a"
-    },
-    {
-      "file": "models.png",
-      "sha256": "10d409be31d4f21230c2a14a87c6bd5a196d2513fde23cb18446a2b19e982f29"
+      "file": "use-cases/demo-model.png",
+      "sha256": "20b778ee75c4f7b9784ea107ea250d2a42eca90044ca67e553d2c61ecaa8e4b1"
     }
-  ]
+  ],
+  "saved_answer_views": "The travel and client close-ups are genuine saved-answer/history views of the recorded runs; no text was replaced."
 }

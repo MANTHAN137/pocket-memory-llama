@@ -6,9 +6,9 @@ Pocket Memory is a native Android personal memory app. Save notes, ask questions
 
 This edition offers **Meta Llama 3.2 3B Instruct** as its only language model. Download it inside **Models**, wait for verification, then tap **Use this model**. No file picker or import step is required.
 
-[Download Android APK](https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.8.0-llama/PocketMemory-Llama-0.8.0.apk) · [Watch the 1:55 narrated walkthrough](https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.8.0-llama/PocketMemory-Llama-Demo.mp4) · [Preview](https://manthan137.github.io/pocket-memory-llama/)
+[Download Android APK](https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.8.0-llama/PocketMemory-Llama-0.8.0.apk) · [Watch the 2:05 narrated walkthrough](https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.8.0-llama/PocketMemory-Llama-Demo.mp4) · [Preview](https://manthan137.github.io/pocket-memory-llama/)
 
-<table><tr><td width="33%"><img src="docs/images/memory.png" alt="Pocket Memory"></td><td width="33%"><img src="docs/images/memory-answer-final.png" alt="Actual Llama saved-memory answer"></td><td width="33%"><img src="docs/images/models.png" alt="Llama ready in Models"></td></tr></table>
+<table><tr><td width="33%"><img src="docs/images/memory.png" alt="Pocket Memory"></td><td width="33%"><img src="docs/images/use-cases/demo-travel-detail.png" alt="Actual Llama saved-memory answer"></td><td width="33%"><img src="docs/images/models.png" alt="Llama ready in Models"></td></tr></table>
 
 The narrated walkthrough is edited from actual Android/browser captures with fictional data. No simulated taps or inference-speed claim. [Media provenance](docs/evidence/media-provenance.json).
 
@@ -16,15 +16,15 @@ The narrated walkthrough is edited from actual Android/browser captures with fic
 
 | Need | Where to go | Example |
 |---|---|---|
-| Remember a detail | Memory → Add | Save “Bring the purple adapter to the Juniper demo.” |
-| Find it later | Ask your memory | “What should I bring to the Juniper demo?” Llama answers with a saved-memory reference. |
+| Remember a detail | Memory → Add | Save where the spare keys are kept for a weekend stay. |
+| Find it later | Ask your memory | “Where did I keep the spare keys?” Llama answers with a saved-memory reference. |
 | Talk to Llama | Chat | Ask a question or develop an idea using the local model. |
 | Improve a draft | Writing | Fix grammar or summarize text; review before replacing your draft. |
 | Keep track of the day | Today | Use Pocket Memory's existing tasks and reminders. |
 | Check public information | Chat → Search the web | One MCP search, followed by a local Llama answer and source URLs. |
 | Let a browser agent help | Settings → Browser companion | Search saved memories or ask the phone's Llama through WebMCP. |
 
-The Juniper example uses fictional data and passed actual Llama inference. Model quality varies; sources and writing edits still need review.
+The revised demo shows travel recall, a corrected client brief with an explicitly labeled source-only fallback, Google Maps web research, and a real WebMCP client lookup. All use fictional data and actual app output. [Replay the cases](docs/DEMO.md). Model quality varies; sources still need review.
 
 ## Android setup
 
