@@ -18,8 +18,8 @@ Meta Llama 3.2 3B is the only offered language model. No hosted Meta API or Muse
 
 The participant guide excludes basic RAG apps. Existing memory Q&A alone does not establish eligibility. The submission should accurately demonstrate the new MCP/WebMCP integration; the organizer decides whether it qualifies. Do not invent a different product to fit a track.
 
-The owner authorized publishing this edition in the Llama repository. Final organizer permissions remain pending. No application has been submitted.
+The owner authorized publishing this edition in the Llama repository. The entry was submitted on 1 November 2026 under Indie Developer Track / Build for Your World. The participant portal confirmed completion with View Submission.
 
 [Event](https://cerebralvalley.ai/e/meta-ai-developer-hackathon) · [Guide](https://cerebralvalley.ai/e/meta-ai-developer-hackathon/details) · [Waiver](https://cerebralvalley.ai/e/meta-ai-developer-hackathon/waiver) · [Submission](https://cerebralvalley.ai/e/meta-ai-developer-hackathon/hackathon/submit)
 
-The organizer permissions include broad reuse rights to submission materials. Final acceptance requires the participant's action-time confirmation. Recorded deadline from the guide: 4 November 2026, 9 PM EST (5 November, 7:30 AM IST); recheck the portal before submission.
+The organizer permissions include broad reuse rights to submission materials. The participant authorized final submission after reviewing the publication permission; it was accepted for this entry. Recorded deadline from the guide: 4 November 2026, 9 PM EST (5 November, 7:30 AM IST); recheck the portal before submission.

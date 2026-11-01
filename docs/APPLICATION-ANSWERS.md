@@ -1,4 +1,4 @@
-# Corrected application draft — not submitted
+# Submitted application summary
 
 **Project name:** Pocket Memory · Built with Llama
 
@@ -16,4 +16,4 @@
 
 **Limits:** Physical-phone performance and broad quality evaluation remain pending. WebMCP requires a supporting browser; ordinary companion controls also work. A browser agent may process returned memory content under its own provider's policy.
 
-**Status:** Draft only. Final organizer permissions are not accepted and the application is not submitted.
+**Status:** Submitted on 1 November 2026. The participant portal shows View Submission. Track: Indie Developer Track. Theme: Build for Your World. Publication permission accepted under the participant’s later instruction to submit.
