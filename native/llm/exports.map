@@ -1,1 +1,1 @@
-{ global: Java_com_pocketmemory_app_LocalLlama_*; local: *; };
+{ global: Java_com_pocketmemory_app_NativeEngine_*; Java_com_pocketmemory_app_LocalLlama_*; local: *; };

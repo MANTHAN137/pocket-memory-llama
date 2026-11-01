@@ -1,29 +1,27 @@
 # Architecture
 
-The new planner compiles saved instructions into a reviewed task batch. Model output never becomes arbitrary executable text.
+Pocket Memory stays native Android. Java owns screens, SQLite notes/conversations/tasks, model setup, consent and job limits. JNI adapters call the pinned llama.cpp runtime. The sole offered language model is Meta Llama 3.2 3B Instruct, Q4_K_M.
 
-## State and inference boundaries
+## Memory, Chat and Writing
 
-`PlanStore.snapshot()` returns immutable source records and a hash of that same list. `LlamaPlanner` ranks notes by goal terms, extracts explicit action sentences, and assigns candidate IDs. Relevant notes are bounded to eight, candidates to sixteen and selected actions to six.
+Saved memories stay in local storage. Ask retrieves relevant passages and uses local Llama to answer with references. Chat sends a bounded conversation to local Llama. Writing uses existing input/context limits, numeric preservation checks and user review. Today retains Pocket Memory's task/reminder behavior. Existing cancellation, repetition checks and generation deadlines remain in place.
 
-`LocalLlama` calls a new JNI adapter around the pinned public llama.cpp runtime. Llama 3.2 3B receives the goal, chosen date, candidate contexts and a system instruction treating notes as untrusted data. A grammar limits output to a single JSON object containing allowed integer IDs. The Java parser rejects extra fields, unknown IDs, duplicates, fractions and prose. One format-repair attempt is allowed; refusal never falls back to invented tasks.
+## Model lifecycle
 
-For accepted IDs, the app copies the original action text, source ID/version/title/body into an immutable proposal. Llama provides semantic selection. The app stable-sorts selected candidates by explicit phase: Bring/Pack/Collect/Buy/Prepare, then other actions including Arrive, then Use/access, then source contexts beginning After/Following. Model order is preserved within a phase. These narrow rules are not a general dependency solver. The model cannot edit source notes, infer new dates, create tasks, send messages or invoke shell commands.
+Models is one Llama card: Download/Resume → verification → Use this model. ModelDownloadService uses an Android foreground notification, HTTPS, range resume, exact byte count and full SHA-256. A verified file is moved into its final private app location. Selection is persisted; there is no external download/import handoff. Storage and low-memory checks run before starting a transfer.
 
-## Review and atomic execution
+## Web research
 
-The user chooses actions and explicitly approves a batch. Immediately inside a SQLite transaction, `apply()` compares the current source hash with the proposal snapshot. Any source change rejects the entire operation. A deduplication key includes source identity/version, exact action and date. Batch links record whether each task was newly created or reused. Applying an already applied plan returns existing links.
+Chat's explicit web switch routes only that submitted question to McpClient. It initializes a narrow MCP Streamable HTTP session, validates the advertised search schema, then invokes only Exa web_search_exa. WebResearch selects at most three bounded excerpts and performs one grammar-constrained local Llama answer. Java validates answer fields and source IDs. The model has no tool access during answering. ModelHarness enforces a 180-second outer budget and one generation call. Native output also has token/time/repetition stops.
 
-`undo()` checks all newly created tasks before deleting any. If a created task is missing, completed or changed in title/date, the transaction refuses the whole undo. Reused tasks are preserved. Undo is based on current task state, not a claim of tracking all historical edits. Reapplying an undone, fresh plan requires explicit review.
+NativeEngine's cached model is unloaded before the separate web-answer adapter loads Llama, avoiding two concurrent copies. Stop cancels the correct network/model work. No autonomous research retry or tool recursion is implemented.
 
-## Cancellation and persistence
+## Browser companion
 
-Each inference job receives an epoch ticket and its own cancellation flag. The native abort/progress callbacks enforce ticket cancellation and a monotonic deadline. A watchdog requests stop after 150 seconds; native calls are individually bounded to at most 120 seconds. Model/context/samplers are released on exit. Android process termination is still outside application control.
+Android serves bundled HTML/CSS/JS through a foreground service on 127.0.0.1 at an ephemeral port. The user opens a 15-minute session from Settings. A 32-byte, one-use code in the URL fragment is exchanged for an in-memory bearer token and removed from browser history. Requests require the exact Host and same Origin; no CORS is enabled. Static assets have a restrictive content security policy.
 
-Notes, proposals, source snapshots, raw model output, task links and task status live in independent `llama-plans.db`. Restart restores persisted state without automatic inference or task execution.
+The browser registers five actual WebMCP tools when document.modelContext (or the earlier navigator.modelContext) is available. Both ordinary controls and WebMCP call the same phone endpoints. Model work runs on the app worker and is polled as a bounded asynchronous job. Only status, memory search, memory Q&A, chat and web research are exposed. No memory writes, model installation, filesystem roots, shell, payments or arbitrary MCP endpoints are exposed.
 
-## Privacy and deployment
+Sessions permit at most 24 operations and six model generations. Duplicate normalized questions reuse the same job. HTTP workers, queue, body size, headers, polls and deadlines are capped. The service closes on expiry or explicit Turn off.
 
-The manifest requests no permissions, including no INTERNET permission. A browser handles the optional pinned model download; Android's document picker grants access to a user-selected model file. Import verifies size and SHA-256 before enabling inference. No weights are distributed in the APK or Git repository. Debug signing is for evaluation; no production key is used.
-
-See [limits](../README.md#limits-and-next-steps) and [verification](VERIFICATION.md) for the supported scope and recorded evidence.
+Inference stays on Android. A browser agent receiving memory results may process them outside the phone according to its provider's policy; the consent screen makes that boundary explicit. This is a local companion, not a publicly hosted API.

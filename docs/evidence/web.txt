@@ -1,0 +1,15 @@
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: Chat receives a real MCP web answer from the local Llama model
+PASS: the web answer includes checked source references
+PASS: capture web-chat
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: Chat receives a real MCP web answer from the local Llama model
+PASS: the web answer includes checked source references
+ACTUAL WEB ANSWER: The Android DownloadManager is a system service that handles long-running HTTP downloads in the background, taking care of HTTP interactions and retrying downloads after failures or across connectivity changes and system reboots.
+PASS: capture web-chat
+
+ALL CHECKS PASSED

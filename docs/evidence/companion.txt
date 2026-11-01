@@ -1,0 +1,14 @@
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: the explicit companion service starts
+PASS: the companion listens only on the phone loopback interface
+PASS: browser verification completed within the test session
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: the explicit companion service starts
+PASS: the companion listens only on the phone loopback interface
+PASS: browser verification completed within the test session
+
+ALL CHECKS PASSED

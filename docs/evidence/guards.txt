@@ -1,0 +1,28 @@
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: duplicate normalized searches stop
+PASS: unknown tools stop
+PASS: oversized research traffic stops
+PASS: cancellation stops research
+PASS: unsafe source URL shapes are refused
+PASS: obvious retrieved prompt injection is discarded
+PASS: out-of-range answer source IDs stop
+PASS: extra answer authority fields stop
+PASS: model-invented links stop
+PASS: a bounded cited answer remains usable
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: duplicate normalized searches stop
+PASS: unknown tools stop
+PASS: oversized research traffic stops
+PASS: cancellation stops research
+PASS: unsafe source URL shapes are refused
+PASS: obvious retrieved prompt injection is discarded
+PASS: out-of-range answer source IDs stop
+PASS: extra answer authority fields stop
+PASS: model-invented links stop
+PASS: a bounded cited answer remains usable
+
+ALL CHECKS PASSED

@@ -1,36 +1,17 @@
-# Prepared submission copy
+# Corrected application draft — not submitted
 
-Team name: **Pocket Memory**  
-Member: **Manthan Dhole (Manthanx), solo**  
-Track: **Indie Developer Track**  
-Theme: **Build for Your World**
+**Project name:** Pocket Memory · Built with Llama
 
-## Project description
+**Description:** Pocket Memory helps people save useful information and recall it later with Meta Llama running on Android. This edition keeps the existing Memory, Ask, Chat, Writing and Today experience, simplifies in-app Llama download and selection, and adds optional web research through a bounded MCP client. A local browser companion exposes actual WebMCP tools so a permitted browser agent can search memories and ask the phone's Llama. Sessions expire, operations and generations are capped, and web research allows one explicit search followed by one local answer without automatic retries.
 
-Pocket Memory turns scattered saved instructions into an inspectable, reviewed task batch on Android. For a fictional client demo, Meta Llama 3.2 3B selects preparation, arrival, venue and follow-up actions while excluding a separate party. Every proposed task copies exact source text and includes its evidence. The model cannot create tasks by itself.
+**What is new:** The Llama-only setup, simplified model lifecycle, guarded MCP web answer pipeline and expiring WebMCP browser companion. Pocket Memory's existing app and llama.cpp are acknowledged foundations. Existing memory Q&A is not claimed as new hackathon work.
 
-The app enforces explicit preparation/arrival/access/follow-up phase rules. The new hackathon workflow snapshots source versions, validates grammar-constrained action IDs, waits for human review and commits the selected tasks atomically. If a venue note changes, the old proposal is blocked with zero partial tasks. Repeated apply is idempotent; guarded undo protects completed or changed tasks. Plans and task links persist across process restart.
+**Meta usage:** Meta Llama 3.2 3B Instruct, Q4_K_M, running on-device through llama.cpp. No hosted Meta API or Muse model is used.
 
-This is Pocket Memory’s Llama hackathon edition. Pocket Memory's concept/design palette and the public llama.cpp runtime are pre-existing foundations; the focused planner app, JNI adapter, review/execution controller, tests and demo were built for this edition. The demo highlights the new workflow only. Actual Meta inference was verified in an isolated ARM64 emulator in airplane mode. Physical-phone profiling and broader selection-quality evaluation remain pending.
+**Repository:** https://github.com/MANTHAN137/pocket-memory-llama — owner-authorized corrected Pocket Memory source.
 
-## Public GitHub repository
+**Demo:** [Pocket Memory Llama walkthrough](https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.8.0-llama/PocketMemory-Llama-Demo.mp4), 1:55, narrated and edited from actual app/browser captures with fictional data.
 
-https://github.com/MANTHAN137/pocket-memory-llama
+**Limits:** Physical-phone performance and broad quality evaluation remain pending. WebMCP requires a supporting browser; ordinary companion controls also work. A browser agent may process returned memory content under its own provider's policy.
 
-## Three-minute demo
-
-https://github.com/MANTHAN137/pocket-memory-llama/releases/download/v0.6.0-plans/PocketMemory-Plans-Demo.mp4
-
-## Describe use of Meta models and tools
-
-Meta Llama 3.2 3B Instruct, Q4_K_M GGUF, runs directly inside the Android app through llama.cpp and a new JNI adapter. Llama receives a goal and bounded source-action candidates, then selects relevant IDs. Application rules order the workflow phases. A restricted decoder and strict ID validator constrain output; the app copies approved candidate text rather than accepting invented task text. Human approval, source freshness and SQLite transactions control execution. The sole offered language model is Meta Llama. Model import verifies a pinned SHA-256. No hosted Meta API, Muse model or credit redemption was used.
-
-## Why Meta models are important
-
-Llama supplies the semantic relevance step that keyword matching alone cannot provide. The verified example contains an unrelated event sharing the same client name; the actual model selects the client-demo actions and excludes the party. Running open weights on the device lets the planner work without uploading notes or requiring a hosted inference service. Structural guards bound model authority while leaving relevance and ordering visible for the user to review. The APK has no INTERNET permission. The 3B model was chosen for the multi-source example; this prototype makes no production accuracy or phone-speed claim.
-
-## API survey fields
-
-No hosted Meta API was used. Leave optional ratings/comparison/production-use questions blank. For required API likelihood/opinion fields, Neutral is the prepared response because no API experience is being claimed. Optional feedback, if used: “This entry uses Meta open weights locally rather than the hosted API, so hosted API feedback is not applicable.”
-
-Do not add a fabricated X/viral post. Do not accept the final organizer permission checkbox without the participant's action-time confirmation.
+**Status:** Draft only. Final organizer permissions are not accepted and the application is not submitted.

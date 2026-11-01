@@ -1,6 +1,6 @@
 Pocket Memory — Built with Llama
 
-The optional Meta Llama 3.2 3B model is governed by the bundled Llama 3.2 Community License and Acceptable Use Policy. Model weights are imported separately and verified.
+The optional Meta Llama 3.2 3B model is governed by the bundled Llama 3.2 Community License and Acceptable Use Policy. Model weights are downloaded inside the app and verified.
 
 llama.cpp runtime:
 
@@ -25,3 +25,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+The pre-existing Pocket Memory host includes whisper.cpp under its bundled MIT license (licenses/whisper.txt). No voice model is offered in this catalog, so recording controls are hidden.
+
+Google ML Kit Latin and Devanagari text-recognition libraries power on-device OCR under their applicable Google/Android terms. Transitive components retain their upstream notices. Apache 2.0 text is bundled at licenses/apache-2.0.txt.
+
+Standalone MCP/WebMCP integration source is covered by the scoped MIT grant in the source repository. Pre-existing Pocket Memory source and branding retain their owner's copyright. Model and third-party component terms are independent.

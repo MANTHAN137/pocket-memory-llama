@@ -1,0 +1,5 @@
+PASS: unauthenticated API rejected
+PASS: cross-origin POST rejected
+PASS: invalid Host rejected
+PASS: reused connection code rejected
+PASS: oversized body rejected

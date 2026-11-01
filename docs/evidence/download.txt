@@ -1,0 +1,18 @@
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: download fixture begins with the full pinned test model
+PASS: the real in-app HTTPS resume completes and verifies the pinned Llama file: Llama 3.2 · 3B Instruct is ready to use.
+PASS: model download stays inside Pocket Memory
+PASS: capture model-ready
+PASS: Use this model selects Llama without a picker or import
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: download fixture begins with the full pinned test model
+PASS: the real in-app HTTPS resume completes and verifies the pinned Llama file: Llama 3.2 · 3B Instruct is ready to use.
+PASS: model download stays inside Pocket Memory
+PASS: capture model-ready
+PASS: Use this model selects Llama without a picker or import
+
+ALL CHECKS PASSED

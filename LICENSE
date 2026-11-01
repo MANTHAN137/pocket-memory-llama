@@ -1,24 +1,16 @@
-MIT License
+Pocket Memory source notice
 
-Copyright (c) 2026 Manthan Dhole
+Copyright (c) 2026 Manthan Dhole. All rights reserved in the pre-existing Pocket Memory application source and branding. Public availability for review does not by itself grant a license to redistribute or commercialize that pre-existing product code.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The new standalone MCP/WebMCP integration files listed below are available under LICENSE-MIT:
+app/src/main/java/com/pocketmemory/app/McpClient.java
+app/src/main/java/com/pocketmemory/app/WebGuard.java
+app/src/main/java/com/pocketmemory/app/WebResearch.java
+app/src/main/java/com/pocketmemory/app/LocalLlama.java
+app/src/main/java/com/pocketmemory/app/CompanionServer.java
+app/src/main/java/com/pocketmemory/app/CompanionService.java
+app/src/main/java/com/pocketmemory/app/CompanionUi.java
+app/src/main/assets/companion/*
+native/llm/web_jni.cpp
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-Third-party components and Meta model terms remain as identified in
-THIRD_PARTY.md. This license does not grant trademark rights.
+Vendored dependencies and model materials retain their upstream licenses. Earlier MIT-licensed repository revisions retain their existing permissions. This notice does not restrict rights already granted in those earlier revisions.

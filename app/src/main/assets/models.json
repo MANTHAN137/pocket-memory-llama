@@ -1,12 +1,12 @@
 [
   {
     "id": "llama-3.2-3b",
-    "name": "Llama 3.2 · 3B Instruct",
+    "name": "Llama 3.2 \u00b7 3B Instruct",
     "repo": "bartowski/Llama-3.2-3B-Instruct-GGUF",
     "upstream": "meta-llama/Llama-3.2-3B-Instruct",
     "parameters": "3B",
-    "description": "Meta selects and orders allowed source actions for a reviewed local task plan. Built with Llama.",
-    "tradeoff": "A larger on-device model. Review its choices and task order; physical-phone profiling remains pending.",
+    "description": "Chat, ask your memories and write with Meta Llama on your phone. Built with Llama.",
+    "tradeoff": "Runs locally. Download once, then choose Use this model.",
     "license": "Llama 3.2 Community License",
     "licenseAsset": "llama-3.2.txt",
     "minimumRamGb": 8,

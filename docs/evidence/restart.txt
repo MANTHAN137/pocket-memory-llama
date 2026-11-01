@@ -1,0 +1,14 @@
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: the explicit model choice survives process restart
+PASS: the fictional saved memory survives process restart
+PASS: capture restarted-model
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: the explicit model choice survives process restart
+PASS: the fictional saved memory survives process restart
+PASS: capture restarted-model
+
+ALL CHECKS PASSED

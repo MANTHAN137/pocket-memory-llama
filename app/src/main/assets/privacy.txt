@@ -1,13 +1,15 @@
-Pocket Memory - Android hackathon preview
-Effective: 1 November 2026
-Publisher: Manthan Dhole | indiakamanthan@gmail.com
+Pocket Memory · Privacy
 
-This standalone app stores source notes, plan proposals, source snapshots, task batches and tasks in its private Android storage. Meta Llama inference runs on the phone. The app requests no internet permission and includes no analytics, billing, OCR, speech recognition or remote reporting SDK.
+Llama runs on your phone. Saved memories, conversations and tasks stay in this app's storage. This edition includes no account or billing service and adds no analytics. Google ML Kit powers local photo text recognition and may send SDK diagnostic metrics when online; your photos and recognized text are not uploaded.
 
-Model downloads open Hugging Face in your external browser. The browser and download hosts receive ordinary connection metadata. You explicitly select the downloaded GGUF through Android's document picker. The app verifies its pinned size and SHA-256. Model files have their own bundled licence and acceptable-use policy.
+Model download
+Pocket Memory downloads the pinned Llama file from Hugging Face through its Android foreground service. The file stays in app-managed storage. Its size and SHA-256 are checked before use. Pause or resume inside Models; no file import is needed.
 
-The database is not separately encrypted. Android app and device protection apply. Automatic Android cloud backup is disabled. Plans and tasks retain the exact source evidence they were created from; editing or removing a source does not erase those saved snapshots. Clear this app's storage in Android Settings or uninstall it to remove its private data. External downloaded model files remain under your control.
+Optional web search
+When Search the web is enabled in Chat, only the message you send goes to Exa's MCP service at mcp.exa.ai. Saved memories and conversation history are not attached. Exa has its own policy: https://exa.ai/privacy-policy. Llama reads returned excerpts on your phone. Opening a source link uses your browser. The latest web answer and its references are saved locally.
 
-No account, payment, notification, location, microphone or camera access is needed. The task planner creates only local to-do tasks after review. It does not send messages, book appointments.
+Optional browser companion
+Opening the companion starts a connection on this phone only, for up to 15 minutes. Browser agents you allow can read matching saved memories and ask local Llama. Your chosen browser agent may process returned content under its own provider's policy. The companion cannot edit or delete memories, purchase anything or download models. Turn it off from its notification or Settings. No session token is stored in cookies or local storage.
 
-Llama can select an irrelevant action or an unsuitable order. Inspect every proposal and source before applying it. The preview is not for emergencies or professional advice.
+Storage
+Android cloud backup and device transfer are excluded. The database has no additional app-level encryption; Android's app and device protection apply. Clearing app storage or uninstalling removes local data and downloaded models. Exported backups are files you control. Answers may be wrong; inspect the evidence before relying on them.

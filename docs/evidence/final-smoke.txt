@@ -1,0 +1,26 @@
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: capture memory
+PASS: capture ask
+PASS: capture chat
+PASS: capture write
+PASS: capture today
+PASS: capture models
+PASS: unavailable voice settings are hidden
+PASS: the simplified Settings menu opens the companion consent screen
+PASS: capture companion-consent
+PASS: the Llama edition has its own Android identity
+PASS: the only offered language model is Meta Llama
+PASS: the pinned Llama model is available
+PASS: capture memory
+PASS: capture ask
+PASS: capture chat
+PASS: capture write
+PASS: capture today
+PASS: capture models
+PASS: unavailable voice settings are hidden
+PASS: the simplified Settings menu opens the companion consent screen
+PASS: capture companion-consent
+
+ALL CHECKS PASSED

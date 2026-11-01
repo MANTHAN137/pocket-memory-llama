@@ -1,7 +1,9 @@
-Pocket Memory - Llama hackathon preview
+Pocket Memory · Built with Llama
 
-Built with Llama. Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved. The full licence and acceptable-use policy are bundled. GGUF quantization by bartowski; model weights are downloaded separately and verified unchanged.
+Llama 3.2 is governed by the Llama 3.2 Community License and Acceptable Use Policy. Full terms are available in Model details. The Q4_K_M quantization is by bartowski, pinned by revision, size and SHA-256.
 
-This Llama hackathon preview is developed by Manthan Dhole. Inspect the selected source actions and task date before approving a batch. A source check establishes version consistency, not truth or semantic correctness.
+Answers can omit or misinterpret information. Check saved memories and source links before acting. Writing edits remain drafts for you to review.
 
-Native inference integration and the Pocket Memory visual palette are reused foundations. The planner, review UI, source-version gate, atomic task execution, idempotency and guarded undo were built for the hackathon.
+Optional web search uses Exa's MCP service and its applicable policies and rate limits. Each web request permits one search followed by one local Llama answer. The model cannot change permissions, run shell commands, purchase anything or create tasks through this web tool.
+
+The optional WebMCP companion shares matching memory results and answers with the browser agent you allow. Review that provider's policy before using private information. WebMCP availability depends on your browser. The companion's ordinary buttons also work without WebMCP.

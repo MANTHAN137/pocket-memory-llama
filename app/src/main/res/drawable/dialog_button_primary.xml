@@ -1,0 +1,8 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#28222025">
+    <item>
+        <layer-list>
+            <item android:left="3dp" android:top="3dp"><shape><solid android:color="@color/editorial_blue"/><corners android:radius="12dp"/></shape></item>
+            <item android:right="3dp" android:bottom="3dp"><shape><solid android:color="@color/coral_orange"/><corners android:radius="12dp"/><stroke android:width="1.5dp" android:color="@color/editorial_blue"/></shape></item>
+        </layer-list>
+    </item>
+</ripple>

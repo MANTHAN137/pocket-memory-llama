@@ -1,0 +1,10 @@
+Verified through the actual in-app browser WebMCP capability, 1 November 2026.
+Five tools discovered: get_model_status, search_memories, ask_memory, chat_with_llama, search_web.
+get_model_status returned Llama 3.2 · 3B Instruct, ready=true.
+search_memories(Juniper) returned the fictional Juniper demo kit memory.
+ask_memory returned: To bring to the Juniper demo, you should bring the purple adapter. [1]
+The returned source was Juniper demo kit: Bring the purple adapter to the Juniper demo.
+Repeating the same normalized question reused the existing server job.
+An explicit Stop in the ordinary browser controls changed the status to Reply stopped and re-enabled controls.
+Actual browser screenshot: docs/images/webmcp-companion.png.
+This test used emulator loopback forwarding; no public API or real personal memories were exposed.

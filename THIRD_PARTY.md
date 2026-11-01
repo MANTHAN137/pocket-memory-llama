@@ -1,17 +1,11 @@
-# Third-party components and model
+# Components and notices
 
-## Runtime
+The public llama.cpp runtime is vendored under vendor/llama.cpp with its upstream license and notices. The Android build uses CPU inference and llama-common; server, tool and example binaries are disabled. Meta Llama 3.2 3B Instruct is separately downloaded under its Community License and Acceptable Use Policy. The pinned bartowski Q4_K_M artifact, revision, bytes and SHA-256 are recorded in models.json and README.
 
-The public llama.cpp source is vendored under `vendor/llama.cpp`, pinned in `UPSTREAM`, under its MIT license. Its upstream dependency notices remain in the vendor tree. The build uses the CPU inference runtime; server, tools, examples and common utilities are disabled. See `native/llm/CMakeLists.txt`.
+The existing Pocket Memory host includes a vendored whisper.cpp native voice engine under its upstream license; no voice-model download is offered in this Llama-only catalog. Google ML Kit Latin and Devanagari OCR and their transitive Android dependencies retain their upstream terms. Gradle, AGP, Kotlin BOM and the Android platform retain their respective terms. APK notices include applicable Llama, llama.cpp, whisper.cpp and Apache license texts.
 
-## Meta model
+Exa supplies the optional remote MCP search service under its own policies and provider-controlled limits. No Exa server software or API key is distributed. A narrow JSON-RPC/Streamable HTTP client is implemented in Java; no external MCP SDK is bundled.
 
-Built with Llama. Only Meta Llama 3.2 3B Instruct is offered. The Llama 3.2 Community License and Acceptable Use Policy are included under `app/src/main/assets/licenses/`. The model is a separate user download, not part of the APK or source archive. The pinned Q4_K_M artifact comes from bartowski's public GGUF repository; attribution and exact revision/hash are in README and `models.json`.
+Documentation screenshots use fictional data captured from the actual app. No stock media is used. Any walkthrough assembled from screenshots must disclose editing and make no inference-speed claim.
 
-## Build and media
-
-Android/Java/SQLite are platform facilities. Gradle and Android Gradle Plugin are build dependencies governed by their upstream terms. No runtime Maven dependencies are declared. Gradle Wrapper licensing is provided in its source distribution.
-
-All example data, app screenshots, graphics and narration scripts are prepared for this project. The video is an edited walkthrough of actual app captures with locally synthesized macOS system narration and no music. Hashes and edit disclosure are in `docs/evidence/media-provenance.json`. No third-party stock imagery or video is used.
-
-New application source, scripts, documentation and graphics are covered by this repository's MIT license. That grant does not cover the model, vendored third-party code or Pocket Memory trademarks.
+Pocket Memory's pre-existing product source and branding remain with their owner. The earlier repository MIT license must not be taken as permission to relicense private product code copied into this local working edition. The owner authorized publishing the copied core in this repository on 1 November 2026. The pre-existing core retains its copyright; LICENSE identifies the new standalone integration files covered by LICENSE-MIT. Vendored code and model terms are independent.

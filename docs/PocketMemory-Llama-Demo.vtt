@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:14.640
+Pocket Memory keeps your useful details close. This Android edition uses Meta Llama three point two, three billion parameters, running on the phone. It keeps the familiar Memory, Chat, Writing and Today screens.
+
+00:00:14.640 --> 00:00:29.000
+Here is a fictional example. Save a note saying: Bring the purple adapter to the Juniper demo. Ask what you should bring. The actual Llama pipeline identified the purple adapter and returned a reference to the saved note.
+
+00:00:29.000 --> 00:00:42.780
+Chat uses the local Llama model. Writing keeps Pocket Memory’s existing draft tools and review controls. These familiar app features are the foundation, rather than newly invented hackathon functionality.
+
+00:00:42.780 --> 00:01:00.000
+Model setup stays inside the app. Download Llama, pause or resume if needed, and wait for the full file check. Then tap Use this model. A real HTTPS resume, full checksum verification and model selection passed in the isolated Android emulator.
+
+00:01:00.000 --> 00:01:16.530
+When you choose Search the web in Chat, only that message goes to Exa’s MCP service. Saved memories and earlier messages are not attached. Llama reads bounded excerpts locally and returns source links. This screen shows an actual successful web answer.
+
+00:01:16.530 --> 00:01:34.300
+Open Browser companion from Android Settings. In a supporting browser, five WebMCP tools can check the model, find memories, ask about them, chat, or search the web. Actual browser tool calls found the Juniper note and obtained this Llama answer from Android.
+
+00:01:34.300 --> 00:01:55.380
+Web research has one search and one answer, with no automatic retry loop. Requests, content, tokens and time are capped. The companion uses phone loopback, a one use code and a fifteen minute session. Browser agents may process returned content under their provider’s policy. Physical phone testing remains pending.
